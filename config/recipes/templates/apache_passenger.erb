@@ -1,0 +1,19 @@
+<VirtualHost *:80>
+
+  ServerName 192.168.1.125
+  DocumentRoot <%= current_path %>/public
+
+  <Directory "<%= current_path %>/public">
+    Options FollowSymLinks
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+  PassengerRuby /home/deployer/.rvm/gems/ruby-2.1.2/wrappers/ruby
+  PassengerHighPerformance On
+  PassengerMaxPoolSize 6
+  PassengerPoolIdleTime 0
+  RailsEnv <%= rails_env %>
+
+</VirtualHost>
