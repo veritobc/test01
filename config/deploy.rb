@@ -1,7 +1,7 @@
 require "bundler/capistrano"
 require "rvm/capistrano"
 
-require "whenever/capistrano"
+#require "whenever/capistrano"
 
 load "config/recipes/base"
 load "config/recipes/apache"
