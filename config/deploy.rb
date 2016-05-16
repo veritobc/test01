@@ -22,7 +22,7 @@ ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "id_rsa")]
 set :rvm_type, :user
 set :use_sudo, false
 
-set :application, "masqueplus.es"
+set :application, "192.168.1.125"
 
 
 desc "RackSpace Envirement"
@@ -32,8 +32,8 @@ task :development do
   set :repository, "git@github.com:veritobc/test01.git"  
   set :user, "deployer"
   set :deploy_to, "/home/#{user}/apps/#{application}"
-  set :rails_env, "staging"
-  set :branch, "develop"
+  set :rails_env, "development"
+  set :branch, "master"
 end
 
 
