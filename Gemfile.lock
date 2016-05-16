@@ -171,7 +171,6 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capistrano (= 2.15.5)
-  coffee-rails (~> 4.1.0)
   devise
   jbuilder (~> 2.0)
   jquery-rails
